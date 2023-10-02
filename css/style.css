@@ -52,7 +52,7 @@ body {
 
 header {
     padding-top: 2em;
-    background-color: rgba(rgb(255), 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -112,14 +112,36 @@ footer .container {
 /* Fin footer */
 
 
+/* Inicio HERO */
+
+section.hero {
+    background-image: url(../images/fondo.png);
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+section.hero h1 {
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.4em;
+
+}
+
+
+
+/* Fin HERO */
+
+
 
 /* mediaquerys */
 
 @media (width>=48rem) {
     header nav.container #btnMenu {
         display: none;
-
-
     }
 
     header nav.container .menu {
@@ -151,6 +173,12 @@ footer .container {
         margin-right: 0.825rem;
 
     }
+
+    section.hero h1 {
+        max-width: 43.75rem;
+
+    }
+
 
 }
 
