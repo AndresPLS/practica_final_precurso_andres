@@ -139,7 +139,7 @@ section.hero h1 {
 /* Inicio projects */
 
 main section {
-    padding: var(--space) 1.25rem;
+    padding: calc(var(--space) * 3) 1.25rem;
 }
 
 main #projects .grid {
@@ -194,9 +194,20 @@ main #projects h2 {
 
     font-size: 3em;
     padding-bottom: calc(var(--space) * 2);
+    text-align: center;
+}
 
+main .more a {
+    color: var(--secondaryColor);
+    display: inline-block;
+    padding: 0.3rem 0rem;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-top: calc(var(--space) * 3);
+    border-bottom: 1px solid var(--secondaryColor);
 
 }
+
 
 /* Fin projects */
 
