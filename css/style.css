@@ -364,9 +364,7 @@ main #getintouch .espacioBlanco {
 
 /* Inicio about */
 
-div.about h2 {
-    padding-bottom: 1em;
-}
+
 
 
 /* 
@@ -376,6 +374,11 @@ section article figure {
     background-position: center center;
     }
 */
+
+
+/* Inicio Teams */
+
+
 
 main #teams .grid {
     display: grid;
@@ -418,25 +421,49 @@ main #teams .grid h4 {
 
 section div.hiring {
     background-color: var(--colorButton);
-    font-size: 1.2em;
+    font-size: 1.3em;
     width: 100%;
     height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    line-height: 1.3em;
+    line-height: 1.2em;
     padding: 0em 1.25em;
-    margin: 3rem 0 6.25rem 0;
+    margin: 3rem 0;
 
+    & a {
+        text-decoration: none;
+        color: var(--mainColor);
+        border-bottom: 1.5px solid var(--secondaryColor);
+    }
 }
 
+/* Fin Teams */
+
+
+/* Inicio Our expertise */
+
+
+/* Hereda los estilos de la section "our expertise de la pagina de inicio"  */
+/*  En la media Query le meto un grid y listo!!  */
+
+
+/* Fin Our expertise*/
+
+/* Inicio The way we work */
+
+
+
+
+/* Fin The way we work */
 
 /* Fin about */
 
 
 
 /* mediaquerys */
+
 
 @media (width>=48rem) {
     header nav.container #btnMenu {
@@ -517,6 +544,7 @@ section div.hiring {
 
     main #ourexpertise article {
         text-align: left;
+
     }
 
     main #ourexpertise article figure {
@@ -569,6 +597,13 @@ section div.hiring {
             padding-right: 1.875rem;
         }
 
+    }
+
+    main #ourexpertise .grid {
+        display: grid;
+        gap: var(--space);
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
