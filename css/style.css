@@ -296,6 +296,37 @@ main #price .flex article li {
 /* Fin price */
 
 
+/* Inicio news */
+
+main #news .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+
+}
+
+main #news .flex article a {
+    display: block;
+    text-decoration: none;
+    color: var(--mainColor);
+
+    & p {
+        color: var(--secondaryColor);
+    }
+
+    & h3 {
+        font-size: 2em;
+        margin-bottom: 0.3125rem;
+    }
+
+}
+
+
+
+/* Fin news */
+
+
+
 
 /* Inicio about */
 
@@ -442,6 +473,10 @@ section div.hiring {
 
     }
 
+    main section h2 {
+        text-align: left;
+    }
+
 
     main #ourexpertise .flex {
         flex-direction: row;
@@ -458,6 +493,7 @@ section div.hiring {
 
     main #price .flex {
 
+
         flex-direction: row;
 
     }
@@ -467,29 +503,57 @@ section div.hiring {
         text-align: left;
     }
 
-
-}
-
-@media (width>=87.5rem) {
-    header .container {
-        padding: 0rem 0rem;
+    main #news article {
+        width: calc(50% - var(--space));
     }
 
-    footer .container {
-        padding: 0rem 0rem;
+    main #news .flex {
+
+
+        flex-wrap: wrap;
+
+
+    }
+
+    main #news .flex article a {
+        display: block;
+        text-decoration: none;
+        color: var(--mainColor);
+
+        & p {
+            color: var(--secondaryColor);
+        }
+
+        & h3 {
+            font-size: 2em;
+            margin-bottom: 0.3125rem;
+        }
     }
 
 
-}
-
-
-/* Fin mediaquerys */
 
 
 
-/* Inicio header */
+    @media (width>=87.5rem) {
+        header .container {
+            padding: 0rem 0rem;
+        }
+
+        footer .container {
+            padding: 0rem 0rem;
+        }
+
+
+    }
+
+
+    /* Fin mediaquerys */
+
+
+
+    /* Inicio header */
 
 
 
 
-/* Fin header */
+    /* Fin header */
