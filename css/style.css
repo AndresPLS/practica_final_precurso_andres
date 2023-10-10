@@ -105,7 +105,8 @@ header nav.container .menu a {
 /* Inicio footer */
 
 footer .container {
-    padding: 4rem 1.25rem;
+    padding: 2rem 1.25rem;
+    color: var(--secondaryColor);
 }
 
 
@@ -305,6 +306,7 @@ main #news .flex {
 
 }
 
+
 main #news .flex article a {
     display: block;
     text-decoration: none;
@@ -327,13 +329,44 @@ main #news .flex article a {
 
 
 
+/* Inicio Get in touch */
+
+main #getintouch .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+
+    & p {
+        font-size: 1.5em;
+        line-height: 1.3em;
+    }
+
+}
+
+main #getintouch .flex a {
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--secondaryColor);
+    color: var(--mainColor);
+
+}
+
+main #getintouch .espacioBlanco {
+    width: 100%;
+    padding: 30px;
+}
+
+
+
+/* Fin Get in touch */
+
+
+
 
 /* Inicio about */
 
 div.about h2 {
     padding-bottom: 1em;
 }
-
 
 
 /* 
@@ -504,14 +537,11 @@ section div.hiring {
     }
 
     main #news article {
-        width: calc(50% - var(--space));
+        width: calc(50% - (var(--space) / 2));
     }
 
     main #news .flex {
-
-
-        flex-wrap: wrap;
-
+        justify-content: space-between;
 
     }
 
@@ -530,30 +560,37 @@ section div.hiring {
         }
     }
 
+    main #getintouch .flex {
 
+        flex-wrap: nowrap;
+        gap: var(--space);
 
-
-
-    @media (width>=87.5rem) {
-        header .container {
-            padding: 0rem 0rem;
+        & p {
+            padding-right: 1.875rem;
         }
-
-        footer .container {
-            padding: 0rem 0rem;
-        }
-
 
     }
 
-
-    /* Fin mediaquerys */
-
-
-
-    /* Inicio header */
+}
 
 
 
 
-    /* Fin header */
+@media (width>=87.5rem) {
+    header .container {
+        padding: 0rem 0rem;
+    }
+
+    footer .container {
+        padding: 0rem 0rem;
+    }
+
+    main #news .container {
+        padding: 0rem 0rem;
+    }
+}
+
+
+
+
+/* Fin mediaquerys */
