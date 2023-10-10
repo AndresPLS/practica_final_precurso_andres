@@ -453,6 +453,38 @@ section div.hiring {
 
 /* Inicio The way we work */
 
+main #theWay nav {
+
+    padding: 1.25rem 0;
+}
+
+main #theWay nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 0.15rem solid var(--mainColor);
+    padding: 0.8rem 0;
+    font-size: 1.3em;
+
+    & a {
+        text-decoration: none;
+        color: var(--secondaryColor);
+
+        &:hover {
+            color: var(--mainColor);
+        }
+    }
+}
+
+main #theWay section p {
+
+    font-size: 1.3em;
+    line-height: 1.2em;
+    margin-top: 1rem;
+
+}
+
+
 
 
 
@@ -573,6 +605,7 @@ section div.hiring {
 
     }
 
+
     main #news .flex article a {
         display: block;
         text-decoration: none;
@@ -606,6 +639,14 @@ section div.hiring {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+
+    main #theWay .flex {
+        justify-content: space-between;
+
+    }
+
+
+
 }
 
 
@@ -621,6 +662,10 @@ section div.hiring {
     }
 
     main #news .container {
+        padding: 0rem 0rem;
+    }
+
+    main #theWay .container {
         padding: 0rem 0rem;
     }
 }
